@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Web开发之轮播图</title>
+    <script type="text/javascript" src="jquery/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/slider.js"></script>
+
+</head>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol{
+            list-style: none;
+        }
+        .rom {
+            width: 730px;
+            height: 454px;
+            padding: 5px;
+            margin: 100px auto;
+            border:2px solid #b5b5b5;
+            position: relative;
+            cursor: pointer;
+        }
+        .rom div img{
+            position: absolute;
+            display: none;
+        }
+        .rom div img.active{
+            display: block;
+        }
+        .rom ol{
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            margin-left: -85px;
+        }
+        .rom ol li{
+            width: 22px;
+            height: 22px;
+            float: left;
+            text-align: center;
+            margin-right: 10px;
+            text-align: center;
+            line-height: 20px;
+            cursor: pointer;
+            border-radius: 50%;
+            background-color: yellowgreen;
+        }
+        /*.rom ol li:hover{*/
+            /*color: #fff;*/
+            /*background-color: #369c22;*/
+        /*}*/
+        .btn {
+            width: 42px;
+            height: 60px;
+            background-color: rgba(0,0,0,0.5);
+            position: absolute;
+            top: 50%;
+            margin-top: -60px;
+            color: #fff;
+            line-height: 60px;
+            text-align: center;
+            font-size: 42px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgba(0,0,0,0.8);
+        }
+        #points .p_active{
+            color: #fff;
+            background-color: #369c22;
+        }
+        .right {
+            right: 5px;
+        }
+    </style>
+
+<body>
+    <div class="rom" id="sliderbox">
+        <div class="imgrom" id="imglist">
+            <img src="images/11.jpg" alt="" class="active"/>
+            <img src="images/22.jpg" alt=""/>
+            <img src="images/33.jpg" alt=""/>
+            <img src="images/44.jpg" alt=""/>
+            <img src="images/55.jpg" alt=""/>
+            <img src="images/66.jpg" alt=""/>
+        </div>
+        <ol id="points">
+            <li class="p_active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ol>
+        <div class="btns">
+            <div class="btn" id="left" > < </div>
+            <div class="btn right" id="right" >  > </div>
+        </div>
+    </div>
+</body>
+</html>
+<!--<script type="text/javascript">-->
+    <!--window.onload = function(){-->
+        <!--var sliderBox = document.getElementById("sliderbox");-->
+        <!--var imgList = document.getElementById("imglist").children; //获取图片的数组-->
+        <!--var btnLeft = document.getElementById("left");-->
+        <!--var btnRight = document.getElementById("right");-->
+        <!--var pointlist = document.getElementById("points").children;-->
+        <!--//通过循环遍历为每张图设置 点击事件-->
+        <!--for(var i = 0; i< imgList.length; i++) {-->
+            <!--imgList[i].index = i;    //保存img 的下标索引值-->
+            <!--pointlist[i].index = i;    //保存img 的下标索引值-->
+            <!--//7张图片点击事件-->
+            <!--imgList[i].onclick = function() {-->
+                <!--console.log(this.index);-->
+            <!--}-->
+            <!--//7个圆点的点击事件-->
+            <!--pointlist[i].onmouseover = function() {-->
+                <!--console.log("小圆点==" +this.index);-->
+                <!--for(var a=0; a< imgList.length; a++) {-->
+                    <!--pointlist[a].className = "";-->
+                <!--}-->
+                <!--pointlist[this.index].className = "p_active";-->
+                <!--showImg(this.index);-->
+            <!--}-->
+        <!--}-->
+        <!--//设置显示图片 num 表示显示图片的下标索引值-->
+        <!--function showImg(num) {-->
+            <!--for(var a=0; a< imgList.length; a++) {-->
+                <!--imgList[a].style.display = "none";-->
+            <!--}-->
+            <!--imgList[num].style.display = "block";-->
+        <!--}-->
+        <!--//设置小圆点状态-->
+        <!--function setpoint(num){-->
+            <!--for(var a=0; a< imgList.length; a++) {-->
+                <!--pointlist[a].className = "";-->
+            <!--}-->
+            <!--pointlist[num].className = "p_active";-->
+        <!--}-->
+
+        <!--var num = 0,timerImg; //num 点击图片的下标值 , timerImg 轮播定时器-->
+        <!--//切换上一张图片的点击事件-->
+        <!--btnLeft.onclick = function () {-->
+            <!--num &#45;&#45;;-->
+            <!--if(num < 0){-->
+                <!--num =5;-->
+            <!--}-->
+            <!--setpoint(num);-->
+            <!--showImg(num);-->
+        <!--}-->
+        <!--//切换下一张图片的点击事件-->
+        <!--btnRight.onclick = function () {-->
+            <!--num ++;-->
+            <!--if(num > 5){-->
+                <!--num =0;-->
+            <!--}-->
+            <!--setpoint(num);-->
+            <!--showImg(num);-->
+        <!--}-->
+        <!--//启动轮播图-->
+        <!--function playImg(){-->
+            <!--timerImg = setInterval(function(){-->
+                <!--btnRight.onclick();-->
+            <!--},1000);-->
+        <!--}-->
+
+        <!--//启动轮播图-->
+        <!--function stopImg(){-->
+            <!--clearInterval(timerImg);-->
+        <!--}-->
+        <!--sliderBox.onmouseout = playImg;  //鼠标离开图片时继续滚动图片    -->
+        <!--sliderBox.onmouseover = stopImg; //鼠标进入图片时停止滚动图片    -->
+       <!--// playImg();-->
+
+    <!--}-->
+<!--</script>-->
