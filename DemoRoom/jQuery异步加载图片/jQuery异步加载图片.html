@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>jQuery异步加载图片</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="jquery/jquery-2.1.1.min.js"></script>
+    <script src="jquery/jQuery.asyncLoading.js"></script>
+    <script src="js/ALi.js"></script>
+</head>
+<body>
+<div class="content">
+    <!-- 图片大小查看选择器 -->
+    <div class="navtitle">
+        <ul>
+            <li class="li_active">小图</li>
+            <li>中图</li>
+            <li>大图</li>
+        </ul>
+    </div>
+    <div class="imglist">
+        <!-- 这里是图片显示列表  -->
+        <!--<ul>
+            <li>
+                <img src="images/5.jpg" alt=""/>
+                <p>阿狸一号</p>
+                <p>困了的阿狸....</p>
+            </li>
+        </ul>-->
+
+    </div>
+</div>
+</body>
+</html>
+<!--<script src="js/index.js"></script>     Jquery 常规版 -->
+
+<!-- JS 面向对象版 -->
+<script type="text/javascript">
+    var navList = document.getElementsByClassName("navtitle")[0];
+    var img_list = document.getElementsByClassName("imglist")[0];
+    var li_title_list = navList.children[0].children;      //获取头部 按钮的数组
+    var liChildList;
+    for(var i = 0; i < 24; i++){
+        var ali1 = new ALi("阿狸"+(i+1)+"号","萌萌哒的阿狸狸...","images/"+(i+1)+".jpg");
+        img_list.innerHTML += ali1.bindDOM();  //添加图片到列表容器中
+        //console.log(img_list.children);
+        if(i == 23){
+            liChildList = img_list.children;
+            //console.log(liChildList.length);
+        }
+    }
+    var title_index = 0;    //头部 切换看图模式按钮索引
+    //设置头部 按钮事件
+    for(var i = 0; i < li_title_list.length; i++){
+        li_title_list[i].index = i;
+        li_title_list[i].onclick = function (){
+            //console.log(this.index);
+            title_index = this.index;
+            changeImage(this.index);
+            setActive(this);
+        }
+        //鼠标的悬浮状态
+        li_title_list[i].onmouseover = function() {
+            this.className = "li_active";
+        }
+        //鼠标的离开状态
+        li_title_list[i].onmouseout = function() {
+            if(this.index != title_index){
+                this.className = "";
+            }
+        }
+    }
+
+    //设置按钮的点击状态
+    function setActive(obj) {
+        for(var i = 0; i < li_title_list.length; i++){
+            li_title_list[i].className = "";
+        }
+        obj.className = "li_active";
+    }
+
+    //点击切换看图 模式的函数  通过点击按钮的索引值切换大小
+    function changeImage(index) {
+        for(var m=0; m < liChildList.length; m++){
+            if (index == 0){
+                liChildList[m].style.width = "225px";
+                liChildList[m].style.height = "180px";
+            }else if(index == 1){
+                liChildList[m].style.width = "460px";
+                liChildList[m].style.height = "280px";
+            }else if(index == 2){
+                liChildList[m].style.width = "960px";
+                liChildList[m].style.height = "620px";
+            }
+        }
+    }
+
+</script>
