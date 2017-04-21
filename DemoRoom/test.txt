@@ -1,1 +1,2 @@
-╡Бйтнд╪Ч
+О╩©Ф╣▀Х╞∙Ф√┤Д╩╤
+public void main(String[] arg0){}
