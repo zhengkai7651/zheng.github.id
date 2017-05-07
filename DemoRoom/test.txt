@@ -1,2 +1,0 @@
-﻿测试文件
-public void main(String[] arg0){}
