@@ -1,0 +1,724 @@
+/**
+ *  公共样式
+*/
+body {
+    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+}
+
+/**
+*   头部导航条moblie_icon
+*/
+
+header .top_menu {
+    line-height: 40px;
+    border-bottom:1px solid #c0c0c0;
+}
+text {
+    color: #e8232c;
+}
+
+header .top_menu .row > div {
+    height: 40px;
+    color: #828282;
+    border-right: 1px solid #c0c0c0;
+}
+header .top_menu .row .tb-1 > a {
+    text-decoration: none;
+    position: relative;
+    z-index: 1999;
+}
+header .top_menu .row div > a {
+    color: #828282;
+}
+header .top_menu .row div > a > img {
+    display: none;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin-left: -60px;
+    border: 1px solid #3e3e3e;
+}
+header .top_menu .row div:hover > a > img {
+    display: block;
+}
+header .top_menu .row div .btn-login {
+    text-decoration: none;
+    display: inline-block;
+    color: #e8232c;
+    outline: none;
+    _moz-outline: none;
+}
+/* 清除 bootstrap 设置 a标签 点击后离开产生的边框  */
+
+header .top_menu .row div .btn-login:hover {
+    color: #DE000B;
+}
+
+
+
+
+/* 注册按钮 */
+header .top_menu .row div .btn-register {
+    color: #FFF;
+    background-color: #E8232C;
+    border-color: #DE000B;
+    margin-right: 10px;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    color: #FFFFFF;
+    background-color: #D60000;
+    border-color: #DE000B;
+}
+
+.btn-register:active,
+.btn-register.active,
+.open .dropdown-toggle.btn-register {
+    background-image: none;
+}
+
+.btn-register.disabled,
+.btn-register[disabled],
+fieldset[disabled] .btn-register,
+.btn-register.disabled:hover,
+.btn-register[disabled]:hover,
+fieldset[disabled] .btn-register:hover,
+.btn-register.disabled:focus,
+.btn-register[disabled]:focus,
+fieldset[disabled] .btn-register:focus,
+.btn-register.disabled:active,
+.btn-register[disabled]:active,
+fieldset[disabled] .btn-register:active,
+.btn-register.disabled.active,
+.btn-register[disabled].active,
+fieldset[disabled] .btn-register.active {
+    background-color: #E8232C;
+    border-color: #DE000B;
+}
+
+.btn-register .badge {
+    color: #E8232C;
+    background-color: #FFFFFF;
+}
+
+
+
+/** end --- 头部导航条 */
+
+
+/**
+ *  字体图标文件
+ */
+@font-face {
+    font-family: 'zheng';
+    src: url('../fonts/MiFie-Web-Font.eot') format('embedded-opentype'),
+    url('../fonts/MiFie-Web-Font.svg') format('svg'),
+    url('../fonts/MiFie-Web-Font.ttf') format('truetype'),
+    url('../fonts/MiFie-Web-Font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 设置字符图标的通用属性 样式*/
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'zheng';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* 手机图标 */
+.icon-mobile::before {
+    content: "\e908";
+    font-size: 14px;
+}
+
+/* 电话图标 */
+.icon-telephone:before {
+    content: "\e909";
+    font-size: 15px;
+}
+
+/* logo图标 */
+.icon-logo {
+    color: #E9232C;
+    display: inline-block;
+    font-size: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.icon-logo::before {
+    content: "\e920";
+}
+
+.icon-logo-title {
+    color: #434243;
+    display: inline-block;
+    font-size: 36px;
+    line-height: 50px;
+    vertical-align: middle;
+}
+.icon-logo-title::before {
+    content: "\e93e";
+}
+
+.icon-uniE900:before {
+    content: "\e900";
+}
+
+.icon-uniE901:before {
+    content: "\e901";
+}
+
+.icon-uniE902:before {
+    content: "\e902";
+}
+
+.icon-uniE903:before {
+    content: "\e903";
+}
+
+.icon-uniE904:before {
+    content: "\e904";
+}
+
+.icon-uniE905:before {
+    content: "\e905";
+}
+
+.icon-uniE906:before {
+    content: "\e906";
+}
+/* 安全保障支付icon */
+.icon-uniE907:before {
+    content: "\e907";
+}
+/*.testing p::before,.testing p before {*/
+    /*content: attr(data-content);*/
+/*}*/
+/* 导航菜单 */
+
+section .nav-menu .nav-main-bg {
+    background-color: #fff;
+    border-bottom-color: #f0f0f0;
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+}
+
+section .nav-menu .navbar ul li a {
+    color: #282828;
+}
+section .nav-menu .navbar ul li a:hover {
+    background-color: transparent;
+    border-bottom: 2px solid #e8232c;
+}
+section .nav-menu .navbar ul li a.item_active {
+    background-color: #fff;
+    border-bottom: 2px solid #e8232c;
+}
+section .nav-menu .navbar ul li a {
+    line-height: 40px;
+    margin-right: 10px;
+}
+section .nav-menu .navbar ul li a:focus {
+    background-color: transparent;
+}
+section .nav-menu .navbar-header {
+    height: 70px;
+}
+section .nav-menu .navbar .navbar-right li > a:hover {
+    color: #e8232c;
+    border-bottom: none;
+}
+section .nav-menu .navbar-header .navbar-toggle:hover {
+    background: #ddd;
+}
+section .nav-menu .navbar-header .navbar-toggle {
+    top: 20px;
+    right: 5px;
+    border-color: #b5b5b5;
+}
+section .nav-menu .navbar-header .navbar-toggle .icon-bar {
+    background: #666;
+}
+/* end-- 导航条结束  */
+
+/* 轮播图 */
+#sliderRoom #main-slider .carousel-inner .item {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+/* 使用CSS 媒体查询 */
+@media (min-width: 768px) {
+    #sliderRoom #main-slider .carousel-inner .item {
+        height: 410px;
+    }
+}
+
+#sliderRoom #main-slider .carousel-inner .item img {
+    width: 100%;
+}
+
+
+/*  end  轮播图 */
+
+
+/* 平台安全保障板块样式 */
+#features {
+    padding: 40px 0 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+section .safe-info {
+    height: 250px;
+}
+section .safe-info .safe-item {
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+section .safe-info .safe-item > a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    color: #080808;
+    position: relative;
+
+}
+section .safe-info .safe-item > a:hover {
+    color: #E9232C;
+}
+section .safe-info .safe-item a .icon-box {
+    float: left;
+    font-size: 35px;
+    line-height: 100px;
+    margin-left: 10%;
+    width: 30%;
+}
+section .safe-info .safe-item a .text-safe {
+    float: left;
+    width: 70%;
+    text-align: left;
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    /*transform: translateX(-50%) translateY(-50%);*/
+}
+/* IE 不支持 transform: translateX(-50%) translateY(-50%);*/
+
+section .safe-info .safe-item a .text-safe > h4 {
+    height: 15px;
+}
+/* end  平台安全保障板块样式 */
+
+/* 平台预约服务 */
+#booking-col {
+    border-bottom: 1px solid #ccc;
+}
+
+#booking-col .booking {
+    padding: 20px 0 20px 0;
+}
+#booking-col .booking p {
+    color: #080808;
+    font-size: 15px;
+}
+#booking-col .booking p > i {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+#booking-col .booking .pull-left > span {
+    color: red;
+}
+#booking-col .booking .pull-right {
+    cursor: pointer;
+}
+#booking-col .booking p > a {
+    color: red;
+    text-decoration: none;
+}
+#booking-col .booking p > a:hover {
+    border-bottom: 1px solid red;
+}
+
+/* end --- 平台预约服务 */
+
+
+/* 平台理财产品列表 */
+
+/* 导航菜单 */
+
+/* 产品李彪标签导航菜单 */
+#product-list {
+    padding: 50px 0 50px 0;
+    background-color: #e3e3e3;
+}
+@media (max-width: 768px) {
+    #product-list .ul-wrapper {
+        overflow-x: scroll;
+    }
+}
+#product-list .p-tabs-title {
+    padding-left: 20px;
+    background-color: #fff;
+    overflow: hidden;
+}
+#product-list .p-tabs-title li {
+    height: 49px;
+    margin-left: 10px;
+}
+#product-list .p-tabs-title li > a {
+    color: #080808;
+    height: 48px;
+    font-size: 16px;
+    border: none ;
+    background-color: transparent;
+}
+#product-list .p-tabs-title li:hover {
+    background-color: #fff;
+    border-bottom: 4px solid red;
+}
+#product-list .p-tabs-title li.check-true {
+    background-color: #fff;
+    border-bottom: 4px solid red;
+}
+/*#product-list .p-tabs-title li > a.check-true {*/
+    /*background-color: #fff;*/
+    /*font-size: 16px;*/
+    /*border-bottom: 4px solid red;*/
+/*}*/
+
+/* end -- 导航菜单 */
+
+/* 产品卡片列表 */
+#product-list .tab-content {
+    padding: 20px 0 20px 0;
+}
+#product-list .tab-content .tab-pane .row > .col-xs-12 {
+    height: 150px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* 新手体验产品 */
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-box {
+    width: 100%;
+    height: 100%;
+    background-color: #e8232c;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-red .card-right p {
+    color: #fff;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-left {
+    width: 65%;
+    height: 100%;
+    float: left;
+    color: #252525;
+    padding: 10px;
+    border-right: 1px dashed darkgray;
+}
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-left > h4 {
+    font-size: 16px;
+}
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-red::before {
+    content: "\e915";
+    before: 'before';
+    position: absolute;
+    font-family: zheng;
+    color: #fff;
+    font-size: 33px;
+    font-weight: 100;
+    top: -8px;
+    left: 15px;
+}
+
+/* 普通产品 */
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-left dt {
+    color: #080808;
+    font-size: 12px;
+}
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-left dd {
+    text-align: left;
+    color: #e7232c;
+    font-weight: 600;
+    font-size: 10px;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-left .row > div {
+    height: 45px;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right p > strong {
+    font-size: 28px;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right {
+    width: 35%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right .tooltips {
+    position: absolute;
+    width: 75%;
+    text-align: center;
+    top: 18%;
+    left: 25%;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right .tooltips  a {
+    display: inline-block;
+    float: left;
+    width: 20px;
+    height: 20px;
+    color: red;
+    font-weight: 700;
+    margin-left: 6px;
+    border: 1px solid red;
+    text-decoration: none;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right .tooltips  .text-green {
+    color: #339898;
+    border-color: #339898;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right::after {
+    background-color: #e2e2e2;
+    border-radius: 7px;
+    content: ' ';
+    display: block;
+    height: 14px;
+    position: absolute;
+    bottom:  -7px;
+    left: -7px;
+    width: 14px;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right::before {
+    background-color: #e2e2e2;
+    border-radius: 7px;
+    content: ' ';
+    before: 'before';
+    display: block;
+    height: 14px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 14px;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-right p {
+    color: #e8232c;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    margin-top: -25px;
+    /*transform: translateX(50%) translateY(-50%);*/
+    /* IE不支持该属性 */
+}
+/* 使用 transform进行位移时，如果有其他同级的其他盒子也使用了 互相之间会有轻微颤动影响 */
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-red {
+    color: #fff;
+}
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-red dd {
+    color: #fff;
+}
+/* 红色产品卡片样式 */
+
+
+/* 白色产品卡片 */
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-white {
+    background-color: #fff;
+}
+
+/* 产品当前销售状态 */
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-stop {
+    background-color: #dadada;
+    /*background-color: rgba(0,0,0,0.5);*/
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-state-01::before {
+    content: "\e926";
+    before: 'before';
+    z-index: 88;
+}
+
+#product-list .tab-content .tab-pane .row .col-xs-12 .card-stop::before {
+    font-family: zheng;
+    before: 'before';
+    font-size: 100px;
+    color: #e9232c;
+    position: absolute;
+    top: 10px;
+    right: 130px;
+}
+
+/* end  --  平台理财产品列表 */
+#product-news-list {
+    padding: 40px 0 40px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+#product-news-list .tab-news .n-item {
+    margin-right: 20px;
+}
+#product-news-list .tab-news .n-item > .news-title {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    position: relative;
+    border-bottom: 1px dashed #8c8c8c;
+}
+#product-news-list .tab-news .n-item > .news-title:before {
+    content: '  ';
+    before: 'before';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    bottom: -5px;
+    right: -10px;
+    border: 1px solid #666666;
+    border-radius: 50%;
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs {
+    padding: 10px 0 10px 0;
+}
+@media (max-width: 767px) {
+    #product-news-list .tab-news .n-item > .nav-news-tabs {
+        margin-left: 20px;
+    }
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs li {
+    margin: 0 10px 10px 0;
+    text-align: center;
+    background-color: #31b0d5;
+}
+
+#product-news-list .tab-news .n-item > .nav-news-tabs li:hover {
+    background-color: #337ab6;
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs li > a {
+    display: inline-block;
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs li > a:hover {
+    background-color: transparent;
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs a > i {
+    font-size: 40px;
+    color: #EAEAEA;
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs a > .icon-news01::before {
+    content: "\e90e";
+    before: 'before';
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs a > .icon-news02::before {
+    content: "\e90f";
+    before: 'before';
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs a > .icon-news03::before {
+    content: "\e910";
+    before: 'before';
+}
+#product-news-list .tab-news .n-item > .nav-news-tabs a > .icon-news04::before {
+    content: "\e911";
+    before: 'before';
+}
+
+#product-news-list .tab-news .n-item .news-content ul {
+    list-style: none;
+}
+#product-news-list .tab-news .n-item .news-content ul > li {
+    line-height: 37px;
+}
+
+/* 合作伙伴 */
+footer {
+    padding: 20px 0 20px 0;
+}
+footer .cooperative ul {
+    list-style: none;
+}
+footer .cooperative {
+    text-align: center;
+}
+footer .cooperative .coop-list {
+    text-align: center;
+}
+footer .cooperative ul li {
+    float: left;
+    border-right: 1px dashed #ccc;
+}
+footer .cooperative ul li {
+    display: inline-block;
+    width: calc(100%/9);
+    font-size: 55px;
+    line-height: 1;
+}
+
+footer .cooperative ul li:hover {
+    color: red;
+}
+
+footer .cooperative .coop-list ul > .icon-unie92A::before {
+    content: "\e92a";
+    before: 'before';
+}
+footer .cooperative .coop-list ul > .icon-unie92B::before {
+    content: "\e92b";
+    before: 'before';
+}
+footer .cooperative .coop-list ul > .icon-unie92C::before {
+    content: "\e92c";
+    before: 'before';
+}
+footer .cooperative .coop-list ul > .icon-unie92D::before {
+    content: "\e92d";
+    before: 'before';
+}
+footer .cooperative .coop-list ul > .icon-unie92E::before {
+    content: "\e92e";
+}
+footer .cooperative .coop-list ul > .icon-unie92F::before {
+    content: "\e92f";
+}
+footer .cooperative .coop-list ul > .icon-unie929::before {
+    content: "\e929";
+}
+footer .cooperative .coop-list ul > .icon-unie930::before {
+    content: "\e946";
+}
+footer .cooperative .coop-list ul > .icon-unie931::before {
+    content: "\e931";
+}
+
+
+
+
+
+
+
+
