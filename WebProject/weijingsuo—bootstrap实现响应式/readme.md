@@ -1,4 +1,7 @@
-﻿### Bootstrap实现响应式
+﻿## 示例图
+![pc](https://raw.githubusercontent.com/amap-demo/android-trip/master/resource/mark.png)
+
+### Bootstrap实现响应式
 	1. 布局容器container
 	2. 栅格系统
 	 col-xs-2

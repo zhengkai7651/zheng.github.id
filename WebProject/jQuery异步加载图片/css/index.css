@@ -76,7 +76,7 @@ img {border:0;	vertical-align:middle; }  /*  去掉图片低测默认的3像素�
     text-align: center;
     margin: 0 0 20px 20px;
     cursor: pointer;
-    border: 1px solid #fd6401;
+    /*border: 1px solid #fd6401;*/
     background: #f1f1f1;
     padding-bottom: 5px;
 }
