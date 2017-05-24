@@ -1,4 +1,6 @@
-﻿###  Jquery 实现图片查看器
+﻿### 示例图	
+[sample-Image](https://github.com/zhengkai7651/zheng.github.id/blob/master/WebProject/jQuery%E5%BC%82%E6%AD%A5%E5%8A%A0%E8%BD%BD%E5%9B%BE%E7%89%87/sample.jpg)
+###  Jquery 实现图片查看器
     1.使用面向对象的封装数据
     2.使用Jquery实现图片大小切换
     3.使用Jquery.asyncLoading.js实现图片异步加载
