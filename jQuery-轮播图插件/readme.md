@@ -1,5 +1,5 @@
 ﻿### 展示图
-[sliderImage](https://github.com/zhengkai7651/zheng.github.id/blob/master/jQuery-%E8%BD%AE%E6%92%AD%E5%9B%BE%E6%8F%92%E4%BB%B6/sample.jpg)
+![sliderImage](https://github.com/zhengkai7651/zheng.github.id/blob/master/jQuery-%E8%BD%AE%E6%92%AD%E5%9B%BE%E6%8F%92%E4%BB%B6/sample.jpg)
 
 ### 前端开发小项目之轮播图
 
