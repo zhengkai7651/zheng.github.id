@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/*css 初始化 */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;         /* 以你的border开始计算你的宽度 */
+}
+
+body {
+    font-size: 14px;
+    background-color: #fff;
+    font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-appearance: normal;     /* 清除浏览器默认样式 */
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+textarea {
+    resize: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+/*防止拖动*/
+img {
+    border: 0;
+    vertical-align: middle;/*  去掉图片低测默认的3像素空白缝隙*/
+}
+
+.clearfix::before, .clearfix::after {
+    content: ".";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/* 设置通用属性的CSS */
+[class^="icon-"],[class*="icon-"] {
+    background: url("../img/sprites.png") no-repeat;
+    background-size: 200px 200px;
+}

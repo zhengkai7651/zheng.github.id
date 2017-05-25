@@ -1,0 +1,237 @@
+body {
+    background-color: #f4f4f4;
+}
+
+#jd-cart-bar {
+    position: static;
+}
+
+header .cart-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    font-weight: inherit;
+}
+
+header .hint-text {
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    color: #76777a;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+    line-height: 35px;
+    background-color: #fff;
+}
+
+.line {
+    height: 10px;
+    background-color: #f0f0f0;
+}
+
+/* end  */
+
+/* 购物车列表 */
+.cart-list {
+    margin-top: 10px;
+    background-color: #fff;
+}
+section .c-title {
+    height: 35px;
+    line-height: 35px;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+
+}
+
+section .c-title > p {
+    margin-left: 40px;
+    padding-left: 24px;
+    background: url(../img/buy-logo.png) no-repeat left center;
+    background-size: 20px 20px;
+}
+
+section .cart-item > ul li {
+    display: block;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #dfdfdf;
+    position: relative;
+}
+
+section .cart-item > ul li .p-img {
+    float: left;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 10px;
+    width: 81px;
+    height: 81px;
+    border: 1px solid #dfdfdf;
+}
+
+section .cart-item > ul li .p-img > img {
+    width: 100%;
+}
+
+.product-info {
+    width: 60%;
+    padding-top: 10px;
+    padding-right: 10px;
+    font-size: 13px;
+    position: absolute;
+    left: 135px;
+
+}
+
+.product-info .p-name {
+    height: 30px;
+    line-height: 15px;
+    display: -webkit-box;
+    font-size: 12px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.product-info > p {
+    height: 20px;
+    line-height: 20px;
+    color: #ee3131;
+    padding-top: 5px;
+    margin-bottom: 5px;
+}
+
+.product-info .product-number {
+    font-size: 0;
+}
+
+.product-info .product-number .cart-btn {
+    width: 32px;
+    height: 26px;
+    font-size: 14px;
+    border: 1px solid #DFDFDF;
+    background-color: #fff;
+}
+
+.product-info .product-number .text-num {
+    border-left: none;
+    border-right: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.product-info .product-number .text-num:focus {
+    border: 1px solid #8fbbfc;
+}
+
+.product-info .product-number [type="button"]:hover {
+    background-color: #ddd;
+}
+.product-info .product-number .btn-delete {
+    width: 50px;
+    position: absolute;
+    right: 15px;
+    color: #ee3131;
+    background-color: #fff;
+}
+
+/* end 购物车列表 */
+
+/*  */
+.settle-bottom {
+    width: 100%;
+    height: 50px;
+    background-color: #565555;
+    position: fixed;
+    bottom: 0;
+}
+.check-all {
+    width: 80px;
+    height: 50px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+}
+
+.settle-bottom .right {
+    width: 100px;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    background-color: #f04947;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.settle-bottom .right:hover {
+    background-color: #e83633;
+}
+
+/* 确认删除弹框提示 */
+.del-dialog {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.5);
+}
+.del-hidden {
+    display: none;
+}
+.del-dialog .confirm {
+    width: 78%;
+    height: 125px;
+    top: 50%;
+    left: 11%;
+    margin-top: -125px;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 1002;
+}
+.del-dialog .confirm > p {
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+.del-dialog .confirm .cancel{
+    height: 36px;
+    width: 45%;
+    display: block;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    font-size: 16px;
+    float: left;
+}
+
+.del-dialog .confirm .submit{
+    height: 36px;
+    width: 45%;
+    display: block;
+    background: #f15353;
+    text-align: center;
+    line-height: 36px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 10%;
+    float: left;
+}
+
+/* end 确认删除弹框提示 */

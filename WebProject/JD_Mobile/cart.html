@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>京东-购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/test.css"/>
+</head>
+<body>
+
+<header id="jd-cart-bar">
+    <h3 class="cart-title">购 物 车</h3>
+
+    <div class="hint-text">
+        <p>您正在安全的环境中, 请放心购物</p>
+    </div>
+</header>
+<!-- 购物车清单列表 -->
+<section id="jd-shop-cart">
+    <div class="cart-list">
+        <div class="c-title">
+            <p>京东自营</p>
+        </div>
+        <div class="cart-item">
+            <ul>
+                <li>
+                    <div class="p-img">
+                        <img src="img/detail01.jpg" alt=""/>
+                    </div>
+                    <div class="product-info ">
+                        <a class="p-name" href="#">Apple iPhone 6s (A1111) 16G 深空灰色 移动联通电信4G手机</a>
+                        <p>¥4888.00</p>
+                        <div class="product-number">
+                            <input class="cart-btn btn-reduce" type="button" value="-"/>
+                            <input class="cart-btn text-num" type="text" value="2" maxlength="4"/>
+                            <input class="cart-btn btn-add" type="button" value="+"/>
+                            <input class="cart-btn btn-delete" type="button" value="删除"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-img">
+                        <img src="img/detail02.jpg" alt=""/>
+                    </div>
+                    <div class="product-info ">
+                        <a class="p-name" href="#">联想小新 16G 深空灰色 500G机械键盘 GTX970显卡</a>
+                        <p>¥4888.00</p>
+                        <div class="product-number">
+                            <input class="cart-btn btn-reduce" type="button" value="-"/>
+                            <input class="cart-btn text-num" type="text" value="3" maxlength="4"/>
+                            <input class="cart-btn btn-add" type="button" value="+"/>
+                            <input class="cart-btn btn-delete" type="button" value="删除"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-img">
+                        <img src="img/detail01.jpg" alt=""/>
+                    </div>
+                    <div class="product-info ">
+                        <a class="p-name" href="#">Apple iPhone 6s (A3333) 16G 深空灰色 移动联通电信2G手机</a>
+
+                        <p>¥4888.00</p>
+
+                        <div class="product-number">
+                            <input class="cart-btn btn-reduce" type="button" value="-"/>
+                            <input class="cart-btn text-num" type="text" value="5" maxlength="4"/>
+                            <input class="cart-btn btn-add" type="button" value="+"/>
+                            <input class="cart-btn btn-delete" type="button" value="删除"/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart-list">
+        <div class="c-title">
+            <p>大风服饰</p>
+        </div>
+        <div class="cart-item">
+            <ul>
+                <li>
+                    <div class="p-img">
+                        <img src="img/detail01.jpg" alt=""/>
+                    </div>
+                    <div class="product-info ">
+                        <a class="p-name" href="#">春季新款女士花纹睡衣</a>
+                        <p>¥488.00</p>
+                        <div class="product-number">
+                            <input class="cart-btn btn-reduce" type="button" value="-"/>
+                            <input class="cart-btn text-num" type="text" value="2" maxlength="4"/>
+                            <input class="cart-btn btn-add" type="button" value="+"/>
+                            <input class="cart-btn btn-delete" type="button" value="删除"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-img">
+                        <img src="img/detail01.jpg" alt=""/>
+                    </div>
+                    <div class="product-info ">
+                        <a class="p-name" href="#">春季长款毛织外套</a>
+
+                        <p>¥48.00</p>
+
+                        <div class="product-number">
+                            <input class="cart-btn btn-reduce" type="button" value="-"/>
+                            <input class="cart-btn text-num" type="text" value="3" maxlength="4"/>
+                            <input class="cart-btn btn-add" type="button" value="+"/>
+                            <input class="cart-btn btn-delete" type="button" value="删除"/>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="p-img">
+                        <img src="img/detail02.jpg" alt=""/>
+                    </div>
+                    <div class="product-info ">
+                        <a class="p-name" href="#">雷神系列150S i7 4710处理器 8g内存 显卡GTX950</a>
+
+                        <p>¥4888.00</p>
+
+                        <div class="product-number">
+                            <input class="cart-btn btn-reduce" type="button" value="-"/>
+                            <input class="cart-btn text-num" type="text" value="5" maxlength="4"/>
+                            <input class="cart-btn btn-add" type="button" value="+"/>
+                            <input class="cart-btn btn-delete" type="button" value="删除"/>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="settle-bottom">
+        <div class="left">
+            <div class="check-all">全选</div>
+        </div>
+        <div class="right">去结算(0)</div>
+    </div>
+</section>
+
+<!-- 确认删除商品提示框 -->
+<div class="del-dialog del-hidden">
+    <div class="confirm">
+        <p>确认删除这件商品吗?</p>
+        <button class="cancel">取消</button>
+        <button class="submit">确认</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="lib/jq/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+    //添加删除商品按钮事件
+    $(".cart-item li .btn-delete").each(function (index, ele) {
+        var $btnDel = $(ele);
+        $btnDel.click(function () {
+            console.log(index);
+            num = index;
+            $(".del-dialog").css("display", "block");
+        });
+    });
+    //购物车增加数量事件
+    $(".cart-item li .product-number").on("click",".btn-add",function() {
+//        console.log($(this).parent().parent().parent());
+//        console.log($(this).siblings(".text-num").val());
+       var $btn_num = $(this).siblings(".text-num");
+       var num = parseInt($btn_num.val());
+       $btn_num.val(num +1);
+    });
+    //购物车减少数量事件
+    $(".cart-item li .product-number").on("click",".btn-reduce",function() {
+//     console.log($(this).parent().parent().parent());
+//       console.log($(this).siblings(".text-num").val());
+       var $btn_num = $(this).siblings(".text-num");
+       var num = parseInt($btn_num.val());
+        if(num == 0){
+            return;
+        }
+        $btn_num.val(num - 1);
+    });
+    $(".settle-bottom > .right").html("去结算("+$(".cart-item li").length+")");
+
+    //提示删除的确认实际删除
+    $(".del-dialog .submit").on("click", function() {
+        $(".del-dialog").hide();
+        $(".cart-item li").eq(num).remove();
+    });
+    //提示框取消
+    $(".del-dialog .cancel").on("click", function() {
+        $(".del-dialog").hide();
+    });
+
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "status": "0",
+  "msg": "ok",
+  "result": [
+    {
+      "id": "1",
+      "name": "°ÂµÏ",
+      "initial": "A",
+      "price": "0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/1.png",
+      "depth": "1"
+    },
+    {
+      "id": "2",
+      "name": "°¢Ë¹¶Ù¡¤Âí¶¡",
+      "initial": "A",
+      "price": "199999.0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/2.png",
+      "depth": "1"
+    },
+    {
+      "id": "3",
+      "name": "°¢¶û·¨¡¤ÂÞÃÜÅ·",
+      "initial": "A",
+      "price": "5689999.0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/3.png",
+      "depth": "1"
+    },
+    {
+      "id": "4",
+      "name": "AC Schnitzer",
+      "initial": "A",
+      "price": "449999.0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/4.png",
+      "depth": "1"
+    },
+    {
+      "id": "5",
+      "name": "Artega",
+      "initial": "A",
+      "price": "449999.0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/5.png",
+      "depth": "1"
+    },
+    {
+      "id": "6",
+      "name": "°Â¿ËË¹",
+      "initial": "A",
+      "price": "449999.0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/6.png",
+      "depth": "1"
+    },
+    {
+      "id": "7",
+      "name": "±¾Ìï",
+      "initial": "B",
+      "price": "4488888.0",
+      "logo": "http://api.jisuapi.com/car/static/images/logo/300/7.png",
+      "depth": "1"
+    }
+  ]
+}
