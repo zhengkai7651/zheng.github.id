@@ -1,0 +1,19 @@
+.grade {
+	margin: 50px 0;
+	font-size: 20px;
+	background-color: transparent;
+	border: none;
+	color: red;
+}
+.movie-pages {
+	width: 100%;
+	margin: auto;
+}
+.movie-pages .pagination > li {
+	margin: 0 5px;
+}
+.movie-pages .pagination li > a {
+	padding: 6px 15px;
+	margin: 0 6px;
+	cursor: pointer;
+}

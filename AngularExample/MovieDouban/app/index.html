@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My AngularJS App</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/catView.css">
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="cat-title" href="#">猫眼电影</a>
+		</div>
+		<div id="navbar" class="navbar-collapse collapse" ng-controller="SearchController">
+			<ul class="nav navbar-nav navbar-right">
+				<li>
+					<a href="">注册</a>
+				</li>
+				<li>
+					<a href="">登陆</a>
+				</li>
+				<!--<li>
+					<a href="#">Profile</a>
+				</li>
+				<li>
+					<a href="#">Help</a>
+				</li>-->
+			</ul>
+			<form class="navbar-form navbar-right" method="get" >
+				<input type="text" class="form-control" ng-model="search_text" placeholder="绑架者...">
+				<button type="submit" class="btn btn-default" ng-click="searchMovie()">搜索</button>
+			</form>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid" ng-controller="MovieListController">
+	<div class="row">
+		<div class="col-sm-3 col-md-2 sidebar">
+
+			<ul class="nav nav-sidebar">
+				<li auto-focus>
+					<a href="#/in_theaters/1">正在热映</a>
+				</li>
+				<li auto-focus>
+					<a href="#/top250/1">热门排行</a>
+				</li>
+				<li auto-focus>
+					<a href="#/coming_soon/1">即将上映</a>
+				</li>
+				<!--<li>
+					<a href="#/route/">热门榜单</a>
+				</li>-->
+			</ul>
+		</div>
+		<div  class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main" ng-view>
+
+		</div>
+	</div>
+</div>
+	<!--<script src="bower_components/script.js/dist/script.js"></script>
+	<script src="bower_components/angular/angular-loader.min.js"></script>
+	<script>
+		$script([
+			'bower_components/angular/angular.js',
+			'bower_components/angular-route/angular-route.js',
+			'app.js',		// 由于这个包比较小，下载完成过后就直接执行
+			'js/http.js',
+			'js/auto-focus.js',
+			'js/search.js',
+			'route/controllers/controllers_main.js',
+			'route/controllers/controllers_details.js'
+		], function() {
+			console.log(angular);
+// console.log(jQuery);
+		});
+	</script>-->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <!--<script src="route/controllers/controllers_main.js"></script>&lt;!&ndash; 正在上映 &ndash;&gt;-->
+  <script src="js/app.js"></script>		<!-- 入口模块 -->
+  <script src="js/http.js"></script>
+  <script src="js/auto-focus.js"></script>
+  <!--<script src="route/controllers/controllers_details.js"></script>&lt;!&ndash; 热门排行 &ndash;&gt;-->
+</body>
+</html>

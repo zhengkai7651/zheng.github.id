@@ -1,0 +1,61 @@
+<header>
+	<h2 class="modal-header">{{movieList.title}}</h2>
+</header>
+<div class="list-group">
+	<a ng-repeat="item in movieList.subjects" href="#/subject/{{item.id}}" class="list-group-item">
+		<span class="badge grade" >{{ item.rating.average }}</span>
+		<div class="media">		<!-- item.rating.average != 0 ? item.rating.average : "未评分" -->
+			<div class="media-left">
+				<img class="media-object" ng-src="{{item.images.small}}" alt="item.title" height="128">
+			</div>
+			<div class="media-body">
+				<h3 class="media-heading">{{item.title}}</h3>
+				<p>
+					类型：<span>{{item.genres.join('、')}}</span>&nbsp;&nbsp;&nbsp;&nbsp; 上映年份：
+					<span>{{item.year}}</span></p>
+				<p>
+					导演：
+				  <span ng-repeat="d in item.directors">
+						{{d.name + ($last?'':'、')}}
+						<!-- <span ng-if="!$last">、</span> -->
+				  </span>
+				</p>
+
+				<p>
+					主演：
+          <span ng-repeat="c in item.casts">
+	        	{{c.name}}{{$last?'':'、'}}
+	        	<!-- <span ng-if="!$last">、</span> -->
+          </span>
+				</p>
+			</div>
+		</div>
+	</a>
+</div>
+
+<nav class="movie-pages" ng-show="!loading">
+	<ul class="pagination">
+		<li>
+			<a aria-label="Previous" ng-click="next(movieList.currentPage-1)" ng-show="movieList.currentPage!=1">
+				<span aria-hidden="true">上一页</span>
+			</a>
+		</li>
+		<li ng-class="{active:movieList.currentPage == 1}"><a href="#">1</a></li>
+		<li ng-class="{active:movieList.currentPage == 2}"><a href="#">2</a></li>
+		<li ng-class="{active:movieList.currentPage == 3}"><a href="#">3</a></li>
+		<li ng-class="{active:movieList.currentPage == 4}"><a href="#">4</a></li>
+		<!--<li ><a class="disabled">...</a></li>-->
+		<li>
+			<a ng-click="next(movieList.currentPage+1)" ng-show="movieList.currentPage!=movieList.totalPages" aria-label="Next" >
+				<span aria-hidden="true">下一页</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<div class="loading" ng-show="loading">
+	<div class="spinner">
+		<div class="bounce1"></div>
+		<div class="bounce2"></div>
+		<div class="bounce3"></div>
+	</div>
+</div>

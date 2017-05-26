@@ -3,13 +3,12 @@
 
 ### 前端开发小项目之轮播图
 
-
 默认是使用的jquery的实现
 因为考虑到jquery兼容性比较好
 所以如果需查看js的实现将html中的js代码的注释打开后注释掉jquery即可
 
 ### 主要技术
-	* setInterval clearInterval 定时器 清除定时器
-	* onmouseout onmouseover 进行鼠标悬停
+	* setInterval clearInterval 定时器 清除定器
+	* onmouseout  onmouseover 	进行鼠标悬停
  	  控制轮播停止开始
- 	*  Jquery动画 fadeOut fadeIn 渐变动画
+ 	* jQuery动画 fadeOut fadeIn 渐变动画
