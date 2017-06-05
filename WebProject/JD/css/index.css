@@ -1,0 +1,165 @@
+@charset "UTF-8";
+body {
+    font-size: 14px;
+}
+.banner604{
+    position: relative;
+}
+/* 子绝父相 */
+.banner604 a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 604px;
+    background: url("../image/banner.jpg") no-repeat top center;
+}
+/*
+    轮播图
+*/
+.main{
+    position: relative;
+}
+.slider-img{
+    width: 730px;
+    height: 455px;
+    background-color: #8A25C6;
+    margin:12px 0 0 10px;
+    float: left;
+    position: relative;
+}
+.slider-img ul{
+    position: absolute;
+    left: 50%;
+    margin-left: -66px;
+    bottom: 10px;
+}
+.slider-img ul li{
+    width: 20px;
+    height: 20px;
+    float: left;
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #3e3e3e;
+}
+.slider-img ul li:hover{
+    background-color: #b51b1f;
+}
+
+/*
+    活动广告图
+*/
+.todays{
+    margin-top: 10px;
+    z-index: 5;
+    position: relative;
+}
+.day-dt{
+    float: left;
+}
+.day-dd ul{
+    width: 500%;
+}
+.day-dd ul li{
+    float: left;
+    margin-right: 1px;
+}
+
+/*
+    京东公告拦
+*/
+.jd-news{
+    width: 248px;
+    height: 451px;
+    margin-top: 11px;
+    border: 1px solid #e5e5e5;
+    float: right;
+}
+.slider-im
+.news-title{
+    height: 43px;
+    border-bottom: 1px dotted #e1e1e1;
+}
+.news-title p{
+    float: left;
+    line-height: 43px;
+    padding-left: 10px;
+    color: #3c3e3b;
+    font: 15px/43px "微软雅黑";
+}
+.news-title a{
+    display: block;
+    text-align: right;
+    height: 43px;
+    line-height: 43px;
+    color: #3c3e3b;
+    font: 13px/43px "宋体";
+    padding-right: 10px;
+}
+.news-title a:hover{
+    color: #C81623;
+}
+.dd-list{
+    height: 141px;
+    padding: 5px 0 0 10px;
+    border-bottom: 1px dotted #e1e1e1;
+}
+
+.dd-list ul li{
+    line-height: 28px;
+    font-size: 13px;
+}
+
+.dd-list ul li a span{
+    font-weight: 700;
+    margin-right: 5px;
+}
+.life-service .dt{
+    height: 43px;
+    line-height: 43px;
+    padding-left: 10px;
+    color: #3c3e3b;
+    font: 15px/43px "微软雅黑";
+}
+.life-service .dd ul li{
+    width: 61px;
+    height: 70px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    margin-left: -1px;
+}
+.life-service .dd ul li a{
+    display: block;
+    height: 70px;
+    text-align: center;
+    position: relative;
+    padding-top: 45px;
+}
+
+.life-service .dd ul li a i{
+    width: 25px;
+    height: 25px;
+    top: 12px;
+    left: 18px;
+    position: absolute;
+    background: url("../image/spriteicon.png") top right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
